@@ -1,6 +1,8 @@
 # KvmOverUsb
 A plug-and-play KVM (Keyboard Video Mouse) device control.  Control any PC's keyboard/mouse over serial with interactive preview, web viewer, and TCP API for AI automation.
 
+![kvm over usb](photos/003-1024.jpg)
+
 ## What It Does
 
 Control any PC's keyboard and mouse over USB while watching its screen via HDMI capture — all from another PC, a script, or an AI agent.
@@ -28,8 +30,6 @@ flowchart LR
 
     USBHOST -- USB --> EXT["External USB Device<br>(USB drive / HDD)"]
 ```
-
-![kvm over usb](photos/003-1024.jpg)
 
 ## Features
 
