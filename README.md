@@ -47,15 +47,21 @@ The USB-A socket, used for USB expansion of the Controller PC, can connect wirel
 
 ## There are many, many open-source software options to choose from
 
-[sunasaji](https://github.com/sunasaji) / [mcp-serial-hid-kvm](https://github.com/sunasaji/mcp-serial-hid-kvm)
-
-[sunasaji](https://github.com/sunasaji) / [cli-serial-hid-kvm](https://github.com/sunasaji/cli-serial-hid-kvm)
-
 [Jackadminx](https://github.com/Jackadminx) / [KVM-Card-Mini](https://github.com/Jackadminx/KVM-Card-Mini)
 
 [ElluIFX](https://github.com/ElluIFX) / [KVM-Card-Mini-PySide6](https://github.com/ElluIFX/KVM-Card-Mini-PySide6)
 
 [binnehot](https://github.com/binnehot) / [KVM-over-USB](https://github.com/binnehot/KVM-over-USB)
+
+[tobychui](https://github.com/tobychui) / [DezKVM-Go](https://github.com/tobychui/DezKVM-Go)
+
+[mofeng-git](https://github.com/mofeng-git) / [One-KVM](https://github.com/mofeng-git/One-KVM)
+
+[sunasaji](https://github.com/sunasaji) / [serial-hid-kvm](https://github.com/sunasaji/serial-hid-kvm)
+
+[sunasaji](https://github.com/sunasaji) / [mcp-serial-hid-kvm](https://github.com/sunasaji/mcp-serial-hid-kvm)
+
+[sunasaji](https://github.com/sunasaji) / [cli-serial-hid-kvm](https://github.com/sunasaji/cli-serial-hid-kvm)
 
 ### FAQ
 
