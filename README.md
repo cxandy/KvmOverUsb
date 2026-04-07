@@ -73,10 +73,3 @@ Q: How to send the Ctrl + Alt + Delete key combination?
 
 A: To send these key combinations to the controlled end, it is recommended to use the shortcut function in the Keyboard menu.
 
-Q: What should I do if there is an input abnormality when using the software?
-
-A: Please use the reload or reset function in the software's device menu. If the problem persists after use, it is recommended to try restarting the controlled end's operating system.
-
-Q: What should I do if the case is incorrect when fast-pasting or using clipboard input?
-
-A: Please sync the keyboard status using the sync indicator function in the menu before trying again.
