@@ -31,19 +31,28 @@ flowchart LR
 
 ## Features
 
-.1.HID protocol transmission, driver-free
-.2.Support BIOS keyboard control
-.3.Upper computer program compatible with non-board video capture card
-.4.On-board USB-HUB chip, reduce the number of interfaces
-.5.Single MCU dual USB Device controller, reduce transmission delay
-.6.The USB-A socket, used for USB expansion of the Controller PC, can connect wireless keyboards, Mouse, USB flash drives, external hard drives, and other USB devices.
+1.HID protocol transmission, driver-free
+
+2.Support BIOS keyboard control
+
+3.Upper computer program compatible with non-board video capture card
+
+4.On-board USB-HUB chip, reduce the number of interfaces
+
+5.Single MCU dual USB Device controller, reduce transmission delay
+
+6.The USB-A socket, used for USB expansion of the Controller PC, can connect wireless keyboards, Mouse, USB flash drives, external hard drives, and other USB devices.
 
 ## There are many, many open-source software options to choose from
 
 [sunasaji](https://github.com/sunasaji) / [mcp-serial-hid-kvm](https://github.com/sunasaji/mcp-serial-hid-kvm)
+
 [sunasaji](https://github.com/sunasaji)/[cli-serial-hid-kvm](https://github.com/sunasaji/cli-serial-hid-kvm)
+
 [Jackadminx](https://github.com/Jackadminx)/[KVM-Card-Mini](https://github.com/Jackadminx/KVM-Card-Mini)
+
 [ElluIFX](https://github.com/ElluIFX)/[KVM-Card-Mini-PySide6](https://github.com/ElluIFX/KVM-Card-Mini-PySide6)
+
 [binnehot](https://github.com/binnehot)/[KVM-over-USB](https://github.com/binnehot/KVM-over-USB)
 
 ### FAQ
