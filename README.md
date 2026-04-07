@@ -8,7 +8,12 @@ Control any PC's keyboard and mouse over USB while watching its screen via HDMI 
 ```mermaid
 flowchart LR
     subgraph Controller["Controller PC"]
-        APP[serial-hid-kvm]
+        APP[software]
+    end
+
+    subgraph Middle["kvm-over-usb adapter"]
+        USBHOST[USB HOST]
+        DEVICE[Core Processing]
     end
 
     subgraph Target["Target PC"]
@@ -16,8 +21,12 @@ flowchart LR
         HDMI_OUT["HDMI out"]
     end
 
-    APP -- USB --> CH340 -- Serial --> CH9329 -- USB --> HID
-    HDMI_OUT -- HDMI --> CAP[HDMI Capture] -- USB --> APP
+    APP -- USB --> USBHOST
+    USBHOST --> DEVICE
+    DEVICE -- HDMI --> HDMI_OUT
+    DEVICE -- USB --> HID
+
+    USBHOST -- USB --> EXT["External USB Device<br>(USB drive / HDD)"]
 ```
 
 ## Features
@@ -27,7 +36,7 @@ Support BIOS keyboard control
 Upper computer program compatible with non-board video capture card
 On-board USB-HUB chip, reduce the number of interfaces
 Single MCU dual USB Device controller, reduce transmission delay
-The USB-A socket, used for USB expansion of the host side, can connect wireless keyboards, Mouse, USB flash drives, external hard drives, and other USB devices.
+The USB-A socket, used for USB expansion of the Controller PC, can connect wireless keyboards, Mouse, USB flash drives, external hard drives, and other USB devices.
 
 ## There are many, many open-source software options to choose from
 
