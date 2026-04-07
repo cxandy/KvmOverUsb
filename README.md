@@ -29,6 +29,8 @@ flowchart LR
     USBHOST -- USB --> EXT["External USB Device<br>(USB drive / HDD)"]
 ```
 
+![kvm over usb](photos/003-1024.jpg)
+
 ## Features
 
 HID protocol transmission, driver-free
