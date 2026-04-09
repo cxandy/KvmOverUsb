@@ -3,6 +3,8 @@ A plug-and-play KVM (Keyboard Video Mouse) device control.  Control any PC's key
 
 ![kvm over usb](photos/003-1024.jpg)
 
+[Buy from Ebay](https://www.ebay.com/itm/267633782822)
+
 ## What It Does
 
 Control any PC's keyboard and mouse over USB while watching its screen via HDMI capture — all from another PC, a script, or an AI agent.
