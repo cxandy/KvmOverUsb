@@ -63,6 +63,8 @@ The USB-A socket, used for USB expansion of the Controller PC, can connect wirel
 
 [sunasaji](https://github.com/sunasaji) / [cli-serial-hid-kvm](https://github.com/sunasaji/cli-serial-hid-kvm)
 
+[VibiumDev](https://github.com/VibiumDev) / [roadie](https://github.com/VibiumDev/roadie)
+
 ### FAQ
 
 Q: Why doesn't the mouse work when the controlled end is a Linux distribution?
