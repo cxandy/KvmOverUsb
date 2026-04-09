@@ -3,9 +3,6 @@ A plug-and-play KVM (Keyboard Video Mouse) device control.  Control any PC's key
 
 ![kvm over usb](photos/003-1024.jpg)
 
-## [Buy from Ebay](https://www.ebay.com/itm/267633782822)
-## [Buy from Tindie](https://www.tindie.com/products/cxandy/minikvm-over-usb-adapter/)
-
 ## What It Does
 
 Control any PC's keyboard and mouse over USB while watching its screen via HDMI capture — all from another PC, a script, or an AI agent.
@@ -76,3 +73,5 @@ Q: How to send the Ctrl + Alt + Delete key combination?
 
 A: To send these key combinations to the controlled end, it is recommended to use the shortcut function in the Keyboard menu.
 
+## [Buy from Ebay](https://www.ebay.com/itm/267633782822)
+## [Buy from Tindie](https://www.tindie.com/products/cxandy/minikvm-over-usb-adapter/)
