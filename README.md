@@ -73,5 +73,5 @@ Q: How to send the Ctrl + Alt + Delete key combination?
 
 A: To send these key combinations to the controlled end, it is recommended to use the shortcut function in the Keyboard menu.
 
-## [Buy from Ebay](https://www.ebay.com/itm/267633782822)
-## [Buy from Tindie](https://www.tindie.com/products/cxandy/minikvm-over-usb-adapter/)
+[Buy from Ebay](https://www.ebay.com/itm/267633782822)
+[Buy from Tindie](https://www.tindie.com/products/cxandy/minikvm-over-usb-adapter/)
