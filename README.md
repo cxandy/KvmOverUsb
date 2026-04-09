@@ -3,7 +3,7 @@ A plug-and-play KVM (Keyboard Video Mouse) device control.  Control any PC's key
 
 ![kvm over usb](photos/003-1024.jpg)
 
-[Buy from Ebay](https://www.ebay.com/itm/267633782822)
+## [Buy from Ebay](https://www.ebay.com/itm/267633782822)
 
 ## What It Does
 
