@@ -1,7 +1,8 @@
 # KvmOverUsb
 A plug-and-play KVM (Keyboard Video Mouse) device control.  Control any PC's keyboard/mouse over serial with interactive preview, web viewer, and TCP API for AI automation.
 
-![kvm over usb](photos/003-1024.jpg)
+![kvm over usb](photos/9aa58fc1-434a-4e1f-8b88-8e218198edcd.jpg)
+![kvm over usb](photos/9aa58fc1-434a-4e1f-8b88-8e218198edcd.jpg)
 
 ## What It Does
 
