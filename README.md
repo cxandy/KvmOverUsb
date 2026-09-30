@@ -61,31 +61,35 @@ It is still the single most common cause of "the video works but the keyboard an
 
 These are independent community projects. None of them is bundled with, endorsed by, or supported through this board — they are listed because they work with it. Pick whichever suits you.
 
-The baud figures below were checked against each project's source; `serial-hid-kvm` was additionally run against this hardware.
+The baud figures below were read from each project's source; `serial-hid-kvm` was additionally run against this hardware.
 
 ### No configuration needed
 
 | Project | Type | Notes |
 |---|---|---|
-| [binnehot / KVM-over-USB](https://github.com/binnehot/KVM-over-USB) | Desktop GUI | PySide client, CH9329 serial mode. |
+| [canwdev / web-mediadevices-player](https://github.com/canwdev/web-mediadevices-player) | Browser (Web Serial) | Web viewer with CH9329 keyboard/mouse control, screenshots and recording. Also builds as a Tauri desktop app. |
 | [mofeng-git / One-KVM](https://github.com/mofeng-git/One-KVM) | Desktop + web | `ch9329_baudrate` already defaults to 9600. |
+| [sipper69 / Control3](https://github.com/sipper69/Control3) | Windows desktop | C# laptop KVM, `BaudRate` defaults to 9600. |
+| [binnehot / KVM-over-USB](https://github.com/binnehot/KVM-over-USB) | Desktop GUI | PySide client, CH9329 serial mode. |
+| [sjmf / kvm-serial](https://github.com/sjmf/kvm-serial) | Cross-platform (Python) | `pip install kvm-serial`. `--baud` flag if the chip was reconfigured. Also drives CH9350L. |
 | [sunasaji / serial-hid-kvm](https://github.com/sunasaji/serial-hid-kvm) | Desktop + web + API | `pip install serial-hid-kvm`. Preview window, browser viewer, TCP JSON Lines API. |
 | [sunasaji / cli-serial-hid-kvm](https://github.com/sunasaji/cli-serial-hid-kvm) | CLI | Front-end for serial-hid-kvm, with OCR screen reading. |
 | [sunasaji / mcp-serial-hid-kvm](https://github.com/sunasaji/mcp-serial-hid-kvm) | MCP server | Lets AI agents drive the target PC directly. |
+| [hitmoon / guvc-kvm](https://github.com/hitmoon/guvc-kvm) | Linux | guvcview-based, exposes a VNC server. |
+
+Browser-based options need Chrome, Edge or another Chromium browser, because they use the Web Serial API. Firefox and Safari are not supported.
 
 ### Works after changing one setting
 
 | Project | Type | Notes |
 |---|---|---|
-| [tobychui / DezKVM-Go](https://github.com/tobychui/DezKVM-Go) | Browser | Nothing to install. Defaults to 115200 — see [Serial baud rate](#serial-baud-rate). |
+| [tobychui / DezKVM-Go](https://github.com/tobychui/DezKVM-Go) | Browser (Web Serial) | Defaults to 115200 — set **Settings → Serial Baud → 9600**. |
+| [davidkim-code / kvm](https://github.com/davidkim-code/kvm) | Browser / Android Chrome | NanoKVM-USB fork with a baud rate selector for DIY CH9329 hardware. |
+| [KaroUniform / irbis-kvm](https://github.com/KaroUniform/irbis-kvm) | macOS 14+ | UVC capture plus a CH9329 UART bridge, with a baud selector. |
 
-### Not compatible with this board
+### macOS
 
-| Project | Why |
-|---|---|
-| [Jackadminx / KVM-Card-Mini](https://github.com/Jackadminx/KVM-Card-Mini) | Drives a different board over raw USB HID. Its client hardcodes VID `413D` / PID `2107` / usage page `FF00`; this board enumerates as `345F:2109`, so it reports "Device not found". |
-| [ElluIFX / KVM-Card-Mini-PySide6](https://github.com/ElluIFX/KVM-Card-Mini-PySide6) | Same as above. |
-| [VibiumDev / roadie](https://github.com/VibiumDev/roadie) | Uses its own board firmware and a 921600 baud protocol. |
+Support is thin here. `irbis-kvm` is the only macOS client found, and its source is not published in that repository. Everything else is Windows, Linux or browser-based — and the browser options run on macOS only in Chromium.
 
 ## CH9329 configuration tool
 
