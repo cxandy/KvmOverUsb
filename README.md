@@ -1,5 +1,5 @@
 # KvmOverUsb
-A plug-and-play KVM (Keyboard Video Mouse) device control.  Control any PC's keyboard/mouse over serial with interactive preview, web viewer, and TCP API for AI automation.
+A plug-and-play USB HID KVM adapter — CH9329 for keyboard and mouse control, MS2109 for HDMI capture. Driver-free, works down to BIOS, and it runs with the existing CH9329 software ecosystem.
 
 ![kvm over usb](photos/897844d8-3d18-4e54-b035-661d1689ae17.jpg)
 ![kvm over usb](photos/9aa58fc1-434a-4e1f-8b88-8e218198edcd.jpg)
@@ -132,3 +132,10 @@ A: The MS2109 capture side is `345F:2109` (UVC video, USB audio, HID) and the CH
 ## Where to get:
 ### https://www.ebay.com/usr/4917450
 ### https://www.tindie.com/stores/cxandy/
+
+## License
+
+The documentation in this repository is MIT licensed — see [LICENSE](LICENSE).
+
+`CH9329Test_CfgTool.exe` is the exception. It is a WCH binary, redistributed
+unmodified for convenience, and remains under WCH's terms.
