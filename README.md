@@ -61,7 +61,7 @@ It is still the single most common cause of "the video works but the keyboard an
 
 These are independent community projects. None of them is bundled with, endorsed by, or supported through this board — they are listed because they work with it. Pick whichever suits you.
 
-The baud figures below were read from each project's source; `serial-hid-kvm` was additionally run against this hardware.
+Every baud figure below was read out of that project's source, and the list was checked against this hardware on **2026-09-30**: the CH9329 answers a `GET_INFO` query at 9600 and stays silent at 115200, it enumerates as CH340 `1A86:7523` on the control side and `345F:2109` on the capture side behind the on-board hub, and a keyboard HID packet came back acknowledged with a valid checksum. If a project later changes its default, that date is the one to trust.
 
 ### No configuration needed
 
