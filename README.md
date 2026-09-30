@@ -48,34 +48,36 @@ The USB-A socket, used for USB expansion of the Controller PC, can connect wirel
 
 ## Serial baud rate
 
-**The CH9329 on this board is configured at 9600 baud.**
+**The CH9329 on this board ships at 9600 baud — its factory default.**
 
-This is the single most common cause of "the video works but the keyboard and mouse do nothing".
+That is deliberate. 9600 is also what most existing CH9329 software expects, so the board works with the current ecosystem out of the box: no per-unit configuration, and no changes required to any software project.
 
-A baud mismatch is silent. Video is unaffected, host software usually reports the serial port as connected, and keystrokes simply never arrive. A green "connected" status is not proof that input will get through.
+It is still the single most common cause of "the video works but the keyboard and mouse do nothing". A baud mismatch is silent: video is unaffected, host software usually reports the serial port as connected, and keystrokes simply never arrive. A green "connected" status is not proof that input will get through.
 
 - `serial-hid-kvm`, `KVM-over-USB` and `One-KVM` all default to 9600. Nothing to do.
 - `DezKVM-Go` defaults to **115200**. Set **Settings → Serial Baud → 9600**; the page reconnects by itself.
 
 ## Software
 
-These projects speak the CH9329 serial protocol and work with this board.
+These are independent community projects. None of them is bundled with, endorsed by, or supported through this board — they are listed because they work with it. Pick whichever suits you.
+
+The baud figures below were checked against each project's source; `serial-hid-kvm` was additionally run against this hardware.
 
 ### No configuration needed
 
-| Project | Notes |
-|---|---|
-| [sunasaji / serial-hid-kvm](https://github.com/sunasaji/serial-hid-kvm) | `pip install serial-hid-kvm`. Preview window, browser viewer, TCP JSON Lines API. Tested on this hardware. |
-| [sunasaji / cli-serial-hid-kvm](https://github.com/sunasaji/cli-serial-hid-kvm) | CLI front-end for serial-hid-kvm, with OCR screen reading. |
-| [sunasaji / mcp-serial-hid-kvm](https://github.com/sunasaji/mcp-serial-hid-kvm) | MCP server — lets AI agents drive the target PC directly. |
-| [binnehot / KVM-over-USB](https://github.com/binnehot/KVM-over-USB) | Graphical client, CH9329 serial mode. Baud rate is 9600 in its source. |
-| [mofeng-git / One-KVM](https://github.com/mofeng-git/One-KVM) | `ch9329_baudrate` already defaults to 9600. |
+| Project | Type | Notes |
+|---|---|---|
+| [binnehot / KVM-over-USB](https://github.com/binnehot/KVM-over-USB) | Desktop GUI | PySide client, CH9329 serial mode. |
+| [mofeng-git / One-KVM](https://github.com/mofeng-git/One-KVM) | Desktop + web | `ch9329_baudrate` already defaults to 9600. |
+| [sunasaji / serial-hid-kvm](https://github.com/sunasaji/serial-hid-kvm) | Desktop + web + API | `pip install serial-hid-kvm`. Preview window, browser viewer, TCP JSON Lines API. |
+| [sunasaji / cli-serial-hid-kvm](https://github.com/sunasaji/cli-serial-hid-kvm) | CLI | Front-end for serial-hid-kvm, with OCR screen reading. |
+| [sunasaji / mcp-serial-hid-kvm](https://github.com/sunasaji/mcp-serial-hid-kvm) | MCP server | Lets AI agents drive the target PC directly. |
 
 ### Works after changing one setting
 
-| Project | Notes |
-|---|---|
-| [tobychui / DezKVM-Go](https://github.com/tobychui/DezKVM-Go) | Browser based, nothing to install. Defaults to 115200 — see [Serial baud rate](#serial-baud-rate). |
+| Project | Type | Notes |
+|---|---|---|
+| [tobychui / DezKVM-Go](https://github.com/tobychui/DezKVM-Go) | Browser | Nothing to install. Defaults to 115200 — see [Serial baud rate](#serial-baud-rate). |
 
 ### Not compatible with this board
 
@@ -88,7 +90,6 @@ These projects speak the CH9329 serial protocol and work with this board.
 ## CH9329 configuration tool
 
 You should not need this for normal use. It is only relevant if you deliberately want to change the chip's baud rate.
-
 `CH9329Test_CfgTool.exe` in this repository is the official WCH tool, mirrored here for convenience:
 
 - Version `1.4.0.0`, `Copyright (C) WCH 2025`
