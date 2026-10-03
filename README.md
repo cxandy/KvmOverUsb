@@ -54,7 +54,7 @@ That is deliberate. 9600 is also what most existing CH9329 software expects, so 
 
 It is still the single most common cause of "the video works but the keyboard and mouse do nothing". A baud mismatch is silent: video is unaffected, host software usually reports the serial port as connected, and keystrokes simply never arrive. A green "connected" status is not proof that input will get through.
 
-- `serial-hid-kvm`, `KVM-over-USB` and `One-KVM` all default to 9600. Nothing to do.
+- Most of the projects listed below already default to 9600, so there is nothing to set. See the tables under [Software](#software).
 - `DezKVM-Go` defaults to **115200**. Set **Settings → Serial Baud → 9600**; the page reconnects by itself.
 
 ## Software
